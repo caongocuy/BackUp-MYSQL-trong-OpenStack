@@ -33,4 +33,4 @@ export database ra để sau khi thực hiện xong import lại tránh không b
 
 #### 3. Thực hiện
 Song song với việc gỡ bỏ hay cài đè mysql trên node controller, tôi sẽ dựng node db-galera, cấu hình đồng bộ database.
-Chi tiết các bước thực hiện của 2 hướng giải quyết trên, tôi đã viết ra một tài liệu cụ thể cùng với bài viết này
+Chi tiết các bước thực hiện của 2 hướng giải quyết trên, tôi đã viết ra một tài liệu cụ thể cùng với bài viết này.
