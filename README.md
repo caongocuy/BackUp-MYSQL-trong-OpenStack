@@ -28,8 +28,7 @@ gỡ bỏ hết, ta cài đặt mysql-server-wsrep và galera, cấu hình đồ
 ###### b. Cài đè mysql
 
 Tư tưởng thực hiện
-Phiên bản mysql sử dụng trên node controller là mysql-server-5.5 thuần túy, tôi sẽ thực hiện việc cài đè các thành phần mysql-5.6
-- mysql-5.6 là phiên bản tương thích với galera 25.3.5 mà tôi sẽ sử dụng để đồng bộ database. Trước khi thực hiện chúng ta nên
+Phiên bản mysql sử dụng trên node controller là mysql-server-5.5 thuần túy, tôi sẽ thực hiện việc cài đè bằng mysql-5.6 là phiên bản tương thích với galera 25.3.5 mà tôi sẽ sử dụng để đồng bộ database. Trước khi thực hiện chúng ta nên
 export database ra để sau khi thực hiện xong import lại tránh không bị mất dữ liệu khi cài đè.
 
 #### 3. Thực hiện
