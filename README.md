@@ -26,8 +26,8 @@ Sau khi thực hiện xong chúng ta bắt đầu việc gỡ mysql ra khỏi co
 là mysql-server thuần túy, không thực hiện được việc đồng bộ database khi sử dụng galera, mà phải là mysql-server-wsrep. Sau khi
 gỡ bỏ hết, ta cài đặt mysql-server-wsrep và galera, cấu hình đồng bộ database với node db-galera, sau đó import database trở lại.
 
-Thực hiện :
-TRÊN NODE CONTROLLER
+Thực hiện : TRÊN NODE CONTROLLER
+
 B1: Export databases
 
     mysqldump -u root -pWelcome123 --all-databases > nodedb.sql
@@ -38,7 +38,8 @@ B3: Chạy file shell "2-caidat" để cài đặt mysql-server-wsrep và galera
 
 B4: Chạy file shell "3-cauhinhmysql" để thực hiện cấu hình trong file my.conf
 
-TRÊN NODE DB_GALERA
+Thực hiện : TRÊN NODE DB_GALERA
+
 B1: Chạy file shell "1-ip" để cấu hình ip và hostname, chú ý cần sửa file "config.cfg" để có ip phù hợp
 
 B2: Chạy file shell "2-caidat" để cài đặt
@@ -59,11 +60,12 @@ Tư tưởng :
 Phiên bản mysql sử dụng trên node controller là mysql-server-5.5 thuần túy, tôi sẽ thực hiện việc cài đè bằng mysql-5.6 là phiên bản tương thích với galera 25.3.5 mà tôi sẽ sử dụng để đồng bộ database. Trước khi thực hiện chúng ta nên
 export database ra để sau khi thực hiện xong import lại tránh không bị mất dữ liệu khi cài đè.
 
-Thực hiện :
-TRÊN NODE DB_GALERA
+Thực hiện : TRÊN NODE DB_GALERA
+
 Thực hiện tương tự như trên, chú ý : chạy hết shell "
 
-TRÊN NODE CONTROLLER
+Thực hiện : TRÊN NODE CONTROLLER
+
 B1 : Thực hiện cài đặt các thành phần của mysql5.6
 
     apt-get install mysql-server-5.6 mysql-client-5.6 mysql-client-core-5.6
@@ -111,3 +113,5 @@ xong quay lại node controller sửa file "wsrep.cnf" dòng 51 thêm ip của n
 lại mysql.
 
 B8 : Chạy file shell "cauhinhmysql"
+
+B9 : Sau khi import databases trở lại, ta kiểm tra sự đồng bộ của database.
