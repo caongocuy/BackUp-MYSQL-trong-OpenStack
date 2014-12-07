@@ -20,13 +20,13 @@ Là người làm việc trực tiếp với dữ liệu máy tính chắc hẳn
 
 ###### a. Gỡ bỏ mysql
 
-Tư tưởng
+Tư tưởng :
 Trước khi gỡ bỏ Mysql trên node controller, thực hiện export các database ra trước, nhằm mục đích sau này import trở lại. 
 Sau khi thực hiện xong chúng ta bắt đầu việc gỡ mysql ra khỏi controller, sở dĩ phải gỡ ra là vì phiên bản mysql trên node controller
 là mysql-server thuần túy, không thực hiện được việc đồng bộ database khi sử dụng galera, mà phải là mysql-server-wsrep. Sau khi
 gỡ bỏ hết, ta cài đặt mysql-server-wsrep và galera, cấu hình đồng bộ database với node db-galera, sau đó import database trở lại.
 
-Thực hiện
+Thực hiện :
 TRÊN NODE CONTROLLER
 B1: Export databases
 
@@ -55,11 +55,11 @@ Kiểm tra đồng bộ databases.
 
 ###### b. Cài đè mysql
 
-Tư tưởng thực hiện
+Tư tưởng :
 Phiên bản mysql sử dụng trên node controller là mysql-server-5.5 thuần túy, tôi sẽ thực hiện việc cài đè bằng mysql-5.6 là phiên bản tương thích với galera 25.3.5 mà tôi sẽ sử dụng để đồng bộ database. Trước khi thực hiện chúng ta nên
 export database ra để sau khi thực hiện xong import lại tránh không bị mất dữ liệu khi cài đè.
 
-Thực hiện
+Thực hiện :
 TRÊN NODE DB_GALERA
 Thực hiện tương tự như trên, chú ý : chạy hết shell "
 
