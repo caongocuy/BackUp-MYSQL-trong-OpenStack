@@ -20,13 +20,13 @@ Là người làm việc trực tiếp với dữ liệu máy tính chắc hẳn
 
 ###### a. Gỡ bỏ mysql
 
- - Tư tưởng
+Tư tưởng
 Trước khi gỡ bỏ Mysql trên node controller, thực hiện export các database ra trước, nhằm mục đích sau này import trở lại. 
 Sau khi thực hiện xong chúng ta bắt đầu việc gỡ mysql ra khỏi controller, sở dĩ phải gỡ ra là vì phiên bản mysql trên node controller
 là mysql-server thuần túy, không thực hiện được việc đồng bộ database khi sử dụng galera, mà phải là mysql-server-wsrep. Sau khi
 gỡ bỏ hết, ta cài đặt mysql-server-wsrep và galera, cấu hình đồng bộ database với node db-galera, sau đó import database trở lại.
 
- - Thực hiện
+Thực hiện
 TRÊN NODE CONTROLLER
 B1: Export databases
 
