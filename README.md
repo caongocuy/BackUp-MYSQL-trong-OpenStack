@@ -98,13 +98,13 @@ B6 : Cấu hình cluster
 
     vi /etc/mysql/conf.d/wsrep.cnf
 	
-line 41: wsrep_provider=/usr/lib/galera/libgalera_smm.so
+- line 41: wsrep_provider=/usr/lib/galera/libgalera_smm.so
 
-line 51: wsrep_cluster_address="gcomm://"
+- line 51: wsrep_cluster_address="gcomm://"
 
-line 30: bind-address=0.0.0.0
+- line 30: bind-address=0.0.0.0
 
-line 58: wsrep_node_address=172.16.69.181 (Bỏ comment và thêm ip cua node controller)
+- line 58: wsrep_node_address=172.16.69.181 (Bỏ comment và thêm ip cua node controller)
 	
 B7 : Khởi động lại mysql
 
