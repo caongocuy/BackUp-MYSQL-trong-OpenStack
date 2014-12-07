@@ -62,7 +62,7 @@ export database ra để sau khi thực hiện xong import lại tránh không b
 
 Thực hiện : TRÊN NODE DB_GALERA
 
-Thực hiện tương tự như trên, chú ý : chạy hết shell "
+Thực hiện tương tự như trên
 
 Thực hiện : TRÊN NODE CONTROLLER
 
